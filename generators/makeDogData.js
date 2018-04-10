@@ -1,11 +1,15 @@
 #!/usr/bin/env node
 const faker = require('faker');
+const count = +process.argv[2] || 5;
+
 
 function makeFakeWeight() {
   return `${Math.floor(Math.random() * 200)}.${Math.floor(Math.random() * 100) + 10}`;
 }
 
-process.stdout.write(Array(5).fill(0)
+
+
+Array(count).fill(0)
   .map(() => ({
     name:       faker.name.firstName(),
     color:      faker.commerce.color(),
@@ -15,5 +19,5 @@ process.stdout.write(Array(5).fill(0)
     tag_id:     faker.random.uuid(),
     lbs:        makeFakeWeight(),
   }))
-  .map(obj => Object.values(obj).join(','))
-  .join('\r\n'));
+  .forEach(obj => console.log(Object.values(obj).join(',')))
+
