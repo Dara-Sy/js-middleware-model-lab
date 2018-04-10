@@ -5,3 +5,4 @@ curl -sa https://raw.githubusercontent.com/paiv/fci-breeds/master/fci-breeds.csv
 
 # auto generate some dog data (50)
 ./makeDogData.js 50 > ../data/dogs.csv
+

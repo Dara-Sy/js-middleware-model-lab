@@ -1,5 +1,6 @@
 DROP DATABASE IF EXISTS dog_db_tdd;
 CREATE DATABASE dog_db_tdd;
+\c dog_db_tdd
 
 DROP TABLE IF EXISTS breed;
 DROP TABLE IF EXISTS dog;
