@@ -7,3 +7,12 @@ const config = {
 };
 
 let db = pg(config);
+
+
+module.exports = {
+  findAll(){}, // method shorthand without keyword function
+  findOne(){},
+  makeOne(){},
+  save(){},
+  destroy(){},
+};
