@@ -14,10 +14,11 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.10.0",
-    "mocha": "^5.0.5"
+    "mocha": "^5.0.5",
+    "pg-promise": "^8.2.3"
   },
   "dependencies": {
     "faker": "^4.1.0",
-    "pg-promise": "^8.2.3"
+    "global": "^4.3.2"
   }
 }

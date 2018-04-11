@@ -16,7 +16,7 @@ CREATE TABLE breed (
 
 
 CREATE TABLE dog (
-  dog_id        SERIAL PRIMARY KEY NOT NULL,
+  dog_id        SERIAL PRIMARY KEY,
   name          VARCHAR(64) NOT NULL,
   color         VARCHAR(64) NOT NULL,
   lbs           DECIMAL(6,3),
